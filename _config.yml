@@ -3,7 +3,7 @@ title: NeptLiang
 SEOTitle: NetpLiang's Blog
 header-img: img/home-bg.jpg
 email: neptliang@outlook.com
-description: "一名计算机科学与技术专业学生"
+description: "一个计算机科学与技术专业大一学生的博客"
 keyword: "技术,学习"
 url: "https://neptliang.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -48,7 +48,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: hux
+#disqus_username: hux
 
 # Netease setttings
 netease_comment: false
@@ -60,14 +60,14 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: neptliang.github.io
+#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+#ga_domain: neptliang.github.io
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "勿忘少年凌云志,曾许天下第一流"
+sidebar-about-description: "一个计算机科学与技术专业大一学生"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -90,34 +90,34 @@ friends: [
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
-        title: "乱序",
-        href: "http://mida.re/"
-    },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
-    },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "前端神盾局",
-        href: "http://wepiaofei.github.io/blog/"
-    }
+    #    title: "乱序",
+    #    href: "http://mida.re/"
+    #},{
+    #    title: "前端外刊评论",
+    #    href: "http://qianduan.guru/"
+    #},{
+    #    title: "天镶的博客",
+    #    href: "http://lingyu.wang/"
+    #},{
+    #    title: "Luke 的自留地",
+    #    href: "http://hmqk1995.github.io"
+    #},{
+    #    title: "Ebn's Blog",
+    #    href: "http://ebnbin.com/"
+    #},{
+    #    title: "SmdCn's Blog",
+    #    href: "http://blog.smdcn.net"
+    #},{
+    #    title: "解旻的博客",
+    #    href: "http://xieminis.me/"
+    #},{
+    #    title: "DHong Say",
+    #    href: "http://dhong.co"
+    #},{
+    #    title: "尹峰以为",
+    #    href: "http://ingf.github.io/"
+    #},{
+    #    title: "前端神盾局",
+    #    href: "http://wepiaofei.github.io/blog/"
+    #}
 ]
