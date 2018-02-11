@@ -1,123 +1,87 @@
-# Site settings
-title: NeptLiang
-SEOTitle: NetpLiang's Blog
-header-img: img/home-bg.jpg
-email: neptliang@outlook.com
-description: "一个计算机科学与技术专业大一学生的博客"
-keyword: "技术,学习"
-url: "https://neptliang.github.io"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
-
-
-
-# SNS settings
-RSS: false
-weibo_username:     立场鲜明的梁图样
-zhihu_username:     NEPTLIANG
-github_username:    NEPTLIANG
-twitter_username:   NeptLiang
-#facebook_username:  huxpro
-# linkedin_username:  firstname-lastname-idxxxx
-
-
-
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
-
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
-
-
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
+# Jekyll configuration
 markdown: kramdown
-kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+highlighter: rouge
+paginate: 100 # it will paginate after this number
+language: 'en-uk'
 
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+baseurl: /jasper2/
 
+# Website info
+title: Ghost
+description: The professional publishing platform
+cover: assets/images/blog-cover.jpg
+logo: assets/images/blog-icon.png
+logo_dark: assets/images/favicon.png
+favicon: assets/images/favicon.png
+production_url: https://myJekyll.github.io/jasper2/
+source_url: https://github.com/myJekyll/jasper2/
 
-# Disqus settings
-#disqus_username: hux
+# Social info
+navigation: True # show the navbar links
+subscribers: True # you need to connect an external service for this to work,
+# if 'True' the submit button is disabled for now, but you can change that
+# by editing `_includes/subscribe-form.html`
+twitter: tryghost # replace by your username
+facebook: ghost # replace by your username
 
-# Netease setttings
-netease_comment: false
-
-
-
-# Analytics settings
-# Baidu Analytics 
-# ba_track_id: [your track id]
+# Disqus
+disqus: False
+disqus_shortname: myjekyll # replace with your disqus username
 
 # Google Analytics
-#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-#ga_domain: neptliang.github.io
+google_analytics: UA-69281367-1 # replace with your GA tracking identifier
 
+# Permalinks
+permalink: /:title
+# permalink: /author/:author
+# permalink: /tag/:tag
 
+# Authors' info in `_data/authors.yml`
+# Tags' info in `_data/tags_info.yml`
 
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "一个计算机科学与技术专业大一学生"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+# gems and other configs
+plugins: [jekyll-paginate, jekyll-feed]
 
+feed:
+  path: feed.xml
 
+# Additional settings available on the front-matter
+# Site logo in the index.html (as in demo.ghost.io)
+# Author's page cover in _layouts/author.html
+# The same for page.html and tag.html layouts
+# Post's page cover as a per-post basis _posts/...
+# Disqus comments as a per-post basis
+# ...
 
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+# Settings for builing master branch with travis-ci
+# with jekyll-travis
 
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
+# or "master" otherwise
+safe: False
+lsi: False
+username: myJekyll
+repo: jasper2
+branch: master
+relative_source: ../jasper2/
+destination: ../jasper2-pages/
+production_url:  https://myJekyll.github.io/jasper2/
+source_url:  https://github.com/myJekyll/jasper2/
 
-
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
-
-
-
-# Friends
-friends: [
-    {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
-    #    title: "乱序",
-    #    href: "http://mida.re/"
-    #},{
-    #    title: "前端外刊评论",
-    #    href: "http://qianduan.guru/"
-    #},{
-    #    title: "天镶的博客",
-    #    href: "http://lingyu.wang/"
-    #},{
-    #    title: "Luke 的自留地",
-    #    href: "http://hmqk1995.github.io"
-    #},{
-    #    title: "Ebn's Blog",
-    #    href: "http://ebnbin.com/"
-    #},{
-    #    title: "SmdCn's Blog",
-    #    href: "http://blog.smdcn.net"
-    #},{
-    #    title: "解旻的博客",
-    #    href: "http://xieminis.me/"
-    #},{
-    #    title: "DHong Say",
-    #    href: "http://dhong.co"
-    #},{
-    #    title: "尹峰以为",
-    #    href: "http://ingf.github.io/"
-    #},{
-    #    title: "前端神盾局",
-    #    href: "http://wepiaofei.github.io/blog/"
-    #}
-]
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
+  - node_modules
+  - .git 
